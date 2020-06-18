@@ -4,10 +4,11 @@
  * @create date 2020-06-17 20:09:59
  * @modify date 2020-06-17 21:19:03
  * @desc This class offers a clock to be used in a text component
- * @github https://github.com/krsmga/Clock
+ * @github https://github.com/krsmga
  */
 
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System;
 
@@ -17,6 +18,7 @@ using System;
 public class Clock : MonoBehaviour
 {
     private TextMeshProUGUI textTimeClock;
+    public Text text;
     private DateTime _dateTime;
 
     /// <summary>
@@ -57,7 +59,7 @@ public class Clock : MonoBehaviour
     void Start()
     {
         textTimeClock = GetComponent<TextMeshProUGUI>();
-        InvokeRepeating("ClockUpdate",0f,20f);
+        InvokeRepeating("ClockUpdate",0f,1f);
     }
 
     private void ClockUpdate()
@@ -66,5 +68,7 @@ public class Clock : MonoBehaviour
         {
             textTimeClock.text = TimeHM;
         }
+
+        text.text = TimeHMS;
     }
 }
