@@ -9,7 +9,6 @@
 
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using System;
 
 /// <summary>
@@ -17,8 +16,7 @@ using System;
 /// </summary>
 public class Clock : MonoBehaviour
 {
-    private TextMeshProUGUI textTimeClock;
-    public Text text;
+    public Text textTimeClock;
     private DateTime _dateTime;
 
     /// <summary>
@@ -58,7 +56,7 @@ public class Clock : MonoBehaviour
 
     void Start()
     {
-        textTimeClock = GetComponent<TextMeshProUGUI>();
+        textTimeClock = GetComponent<Text>();
         InvokeRepeating("ClockUpdate",0f,1f);
     }
 
@@ -68,7 +66,5 @@ public class Clock : MonoBehaviour
         {
             textTimeClock.text = TimeHM;
         }
-
-        text.text = TimeHMS;
     }
 }
