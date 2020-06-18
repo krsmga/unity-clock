@@ -4,7 +4,7 @@
  * @create date 2020-06-17 20:09:59
  * @modify date 2020-06-17 21:19:03
  * @desc This class offers a clock to be used in a text component
- * @github https://github.com/krsmga
+ * @github https://github.com/krsmga/Clock
  */
 
 using UnityEngine;
