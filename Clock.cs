@@ -16,7 +16,7 @@ using System;
 /// </summary>
 public class Clock : MonoBehaviour
 {
-    public Text textTimeClock;
+    private Text textTimeClock;
     private DateTime _dateTime;
 
     /// <summary>
