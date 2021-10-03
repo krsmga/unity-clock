@@ -6,6 +6,6 @@ A simple class that helps you display a clock with the device's current time in 
 
 ## Screenshots
 
-<img src"../master/Screenshot/image-1.png">
+<img src="../master/Screenshot/image-1.png">
 
   
